@@ -26,7 +26,8 @@ public class ElektrischeWagen extends Car {
 
     //custom methods
     public void charge(int amount) {
-
+        //no details on charge method given
+        setBattery(amount);
     }
 
 

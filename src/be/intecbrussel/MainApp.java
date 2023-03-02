@@ -10,7 +10,7 @@ public class MainApp {
 
 //        Een groene Elektrische wagen met 60% opgeladen batterij.
         ElektrischeWagen myElektrischeWagen = new ElektrischeWagen("GREEN", 25, 200);
-        myElektrischeWagen.setBattery(60);
+        myElektrischeWagen.charge(60);
 
 
 //        Zorg er ook voor dat alle auto's versnellen met 50. Laat zien
