@@ -50,9 +50,8 @@ public class Suv extends Car {
 
     @Override
     public String toString() {
-        return "Data-type: SUV; Colour: " + this.getColour()
-                + "; Speed: " + this.getSpeed()
-                + "; hp: " + this.getHp()
+        return "Data-type: SUV; "
+                + super.toString()
                 + "; bullbar: " + this.hasBullbar()
                 + "; is4x4enabled: " + this.getIs4x4enabled();
     }

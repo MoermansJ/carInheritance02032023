@@ -9,7 +9,7 @@ public class MainApp {
         Cabrio myCabrio = new Cabrio("YELLOW", 25, 200);
 
 //        Een groene Elektrische wagen met 60% opgeladen batterij.
-        ElektrischeWagen myElektrischeWagen = new ElektrischeWagen("GREEN", 25, 200);
+        ElektrischeWagen myElektrischeWagen = new ElektrischeWagen("GREEN", 25, 200, 0);
         myElektrischeWagen.charge(60);
 
 

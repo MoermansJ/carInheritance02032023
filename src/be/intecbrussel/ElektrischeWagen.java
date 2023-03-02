@@ -6,12 +6,12 @@ public class ElektrischeWagen extends Car {
 
     //constructors
     public ElektrischeWagen() {
-        this("DEFAULT_ELEKTRISCHEWAGEN_COLOUR_VALUE", 0, 1);
+        this("DEFAULT_ELEKTRISCHEWAGEN_COLOUR_VALUE", 0, 1, 0);
     }
 
-    public ElektrischeWagen(String colour, int speed, int hp) {
+    public ElektrischeWagen(String colour, int speed, int hp, int battery) {
         super(colour, speed, hp);
-        this.setBattery(100);
+        this.setBattery(battery);
     }
 
     //getters & setters
@@ -48,9 +48,8 @@ public class ElektrischeWagen extends Car {
 
     @Override
     public String toString() {
-        return "Data-type: ElektrischeWagen; Colour: " + this.getColour()
-                + "; Speed: " + this.getSpeed()
-                + "; hp: " + this.getHp()
+        return "Data-type: ElektrischeWagen; "
+                + super.toString()
                 + "; battery%: " + this.getBattery();
     }
 }

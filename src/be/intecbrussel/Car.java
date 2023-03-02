@@ -64,7 +64,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Data-type: Car; Colour: " + this.getColour()
+        return "Colour: " + this.getColour()
                 + "; Speed: " + this.getSpeed()
                 + "; hp: " + this.getHp();
     }

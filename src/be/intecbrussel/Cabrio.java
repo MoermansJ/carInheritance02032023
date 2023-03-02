@@ -41,9 +41,8 @@ public class Cabrio extends Car {
 
     @Override
     public String toString() {
-        return "Data-type: Cabrio; Colour: " + this.getColour()
-                + "; Speed: " + this.getSpeed()
-                + "; hp: " + this.getHp()
+        return "Data-type: Cabrio; "
+                + super.toString()
                 + "; sunroof: " + this.hasSunRoof()
                 + "; sunroof enabled: " + this.getSunRoofEnabled();
     }
