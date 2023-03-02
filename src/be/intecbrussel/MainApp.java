@@ -34,7 +34,5 @@ public class MainApp {
         }
 
         System.out.println(mySuv + "\n" + myCabrio + "\n" + myElektrischeWagen);
-
-
     }
 }

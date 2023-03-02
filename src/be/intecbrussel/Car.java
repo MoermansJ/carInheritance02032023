@@ -48,10 +48,6 @@ public class Car {
     public void accelerator(int amount) {
         //Geef de Acceleratie methode een invulling op basis van (amount + (hp/100)).
         this.setSpeed(amount + (this.getHp() / 100));
-
-        if ((this instanceof Suv) && (((Suv) this).getIs4x4enabled()) && (this.getSpeed() > 30)) {
-            this.setSpeed(30);
-        }
     }
 
     public void slow(int amount) {
