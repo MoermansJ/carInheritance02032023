@@ -47,12 +47,14 @@ public class Car {
     //custom methods
     public void accelerator(int amount) {
         //Geef de Acceleratie methode een invulling op basis van (amount + (hp/100)).
-        this.setSpeed(amount + (this.getHp() / 100));
+        int newSpeed = this.getSpeed() + (amount + (this.getHp() / 100));
+        setSpeed(newSpeed);
     }
 
     public void slow(int amount) {
-        //Slow vertraagt de wagen. dit gebaseerd op dezelfde formule al de versnelling maar dan negatief. D
-        this.setSpeed(amount - (this.getHp() / 100));
+        //Slow vertraagt de wagen. dit gebaseerd op dezelfde formule al de versnelling maar dan negatief.
+        int newSpeed = this.getSpeed() - (amount + (this.getHp() / 100));
+        this.setSpeed(newSpeed);
     }
 
     public void park(int amount) {
@@ -66,6 +68,4 @@ public class Car {
                 + "; Speed: " + this.getSpeed()
                 + "; hp: " + this.getHp();
     }
-
-
 }

@@ -34,7 +34,8 @@ public class ElektrischeWagen extends Car {
     public void accelerator(int amount) {
         //Zorg ervoor dat de acceleratie nu bepaald wordt via de formule (amount + (battery/100)) acceleratie
         //gaat sneller al de batterij meer is opgeladen.
-        this.setSpeed(amount + (this.getBattery() / 100));
+        int newSpeed = this.getSpeed() + (amount + (this.getBattery() / 100));
+        this.setSpeed(newSpeed);
     }
 
     @Override

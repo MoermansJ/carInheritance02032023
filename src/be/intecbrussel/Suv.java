@@ -40,7 +40,8 @@ public class Suv extends Car {
 
     @Override
     public void accelerator(int amount) {
-        this.setSpeed(amount + (this.getHp() / 100));
+        int newSpeed = this.getSpeed() + (amount + (this.getHp() / 100));
+        this.setSpeed(newSpeed);
 
         if (this.getIs4x4enabled() && this.getSpeed() > 30) {
             this.setSpeed(30);
