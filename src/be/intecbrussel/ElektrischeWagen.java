@@ -39,6 +39,13 @@ public class ElektrischeWagen extends Car {
     }
 
     @Override
+    public void slow(int amount) {
+        //Slow vertraagt de wagen. dit gebaseerd op dezelfde formule al de versnelling maar dan negatief.
+        int newSpeed = this.getSpeed() - (amount + (this.getBattery() / 100));
+        this.setSpeed(newSpeed);
+    }
+
+    @Override
     public String toString() {
         return "Data-type: ElektrischeWagen; Colour: " + this.getColour()
                 + "; Speed: " + this.getSpeed()

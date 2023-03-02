@@ -2,7 +2,7 @@ package be.intecbrussel;
 
 public class Suv extends Car {
     //properties
-    private boolean bullbar = true;
+    private boolean bullbar;
     private boolean is4x4enabled;
 
 
